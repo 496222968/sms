@@ -10,7 +10,7 @@ declare(strict_types=1);
  */
 namespace Dwc\Sms;
 
-use Hyperf\Utils\Traits\Macroable;
+use Hyperf\Macroable\Macroable;
 use Dwc\Sms\Contracts\SenderInterface;
 use Dwc\Sms\Contracts\SmsableInterface;
 use Dwc\Sms\Events\SmsMessageSending;
