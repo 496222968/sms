@@ -10,7 +10,7 @@ declare(strict_types=1);
  */
 namespace Dwc\Sms\Contracts;
 
-use Hyperf\Utils\Contracts\Arrayable;
+use Hyperf\Contract\Arrayable;
 
 interface MobileNumberInterface extends Arrayable
 {

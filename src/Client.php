@@ -12,7 +12,7 @@ namespace Dwc\Sms;
 
 use GuzzleHttp\Exception\RequestException as GuzzleRequestException;
 use Hyperf\Guzzle\ClientFactory;
-use Hyperf\Utils\ApplicationContext;
+use Hyperf\Context\ApplicationContext;
 use Dwc\Sms\Exceptions\RequestException;
 
 class Client

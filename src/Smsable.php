@@ -13,7 +13,7 @@ namespace Dwc\Sms;
 use Hyperf\AsyncQueue\Driver\DriverFactory;
 use Hyperf\Contract\CompressInterface;
 use Hyperf\Contract\UnCompressInterface;
-use Hyperf\Utils\ApplicationContext;
+use Hyperf\Context\ApplicationContext;
 use Dwc\Sms\Contracts\MobileNumberInterface;
 use Dwc\Sms\Contracts\SenderInterface;
 use Dwc\Sms\Contracts\SmsableInterface;

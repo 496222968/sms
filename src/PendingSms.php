@@ -10,7 +10,7 @@ declare(strict_types=1);
  */
 namespace Dwc\Sms;
 
-use Hyperf\Utils\ApplicationContext;
+use Hyperf\Context\ApplicationContext;
 use Dwc\Contract\HasMobileNumber;
 use Dwc\Sms\Contracts\SmsableInterface;
 use Dwc\Sms\Contracts\SmsManagerInterface;
