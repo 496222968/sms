@@ -6,7 +6,7 @@
         "hyperf",
         "sms"
     ],
-    "description": "The Hyperf SMS package.",
+    "description": "短信发送",
     "authors": [
 
     ],
