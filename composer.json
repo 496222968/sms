@@ -1,0 +1,63 @@
+{
+    "name": "dwc/sms",
+    "type": "library",
+    "license": "MIT",
+    "keywords": [
+        "hyperf",
+        "sms"
+    ],
+    "description": "The Hyperf SMS package.",
+    "authors": [
+
+    ],
+    "autoload": {
+        "psr-4": {
+            "Dwc\\Sms\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "HyperfTest\\Sms\\": "tests"
+        }
+    },
+    "require": {
+        "php": ">=7.3",
+        "ext-json": "*",
+        "ext-simplexml": "*",
+        "ext-swoole": ">=4.5",
+        "giggsey/libphonenumber-for-php": "^8.12",
+        "hyperf-ext/contract": "~2.2.0",
+        "hyperf/async-queue": "~3.0.0",
+        "hyperf/command": "~3.0.0",
+        "hyperf/config": "~3.0.0",
+        "hyperf/devtool": "~3.0.0",
+        "hyperf/di": "~3.0.0",
+        "hyperf/event": "~3.0.0",
+        "hyperf/framework": "~3.0.0",
+        "hyperf/guzzle": "~3.0.0",
+        "hyperf/logger": "~3.0.0"
+    },
+    "require-dev": {
+        "friendsofphp/php-cs-fixer": "^3.0",
+        "hyperf/testing": "~2.2.0",
+        "phpstan/phpstan": "^0.12",
+        "swoole/ide-helper": "dev-master",
+        "mockery/mockery": "^1.0"
+    },
+    "suggest": {
+        "hyperf/validation": "Required to use the validation."
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "scripts": {
+        "test": "co-phpunit --prepend tests/bootstrap.php -c phpunit.xml --colors=always",
+        "analyse": "phpstan analyse --memory-limit 1024M -l 0 ./src",
+        "cs-fix": "php-cs-fixer fix $1"
+    },
+    "extra": {
+        "hyperf": {
+            "config": "Dwc\\Sms\\ConfigProvider"
+        }
+    }
+}
